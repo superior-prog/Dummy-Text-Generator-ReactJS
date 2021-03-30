@@ -49,7 +49,7 @@ function Options(props) {
                     <div className="copy">
                         <CopyToClipboard
                             text={paragraphs.map((sentence) =>
-                                includeHtml ? `<${tag}>${sentence}</${tag}>` : sentence
+                                includeHtml === 'Yes' ? `<${tag}>${sentence}</${tag}>` : sentence
                             )}>
                             <button>Copy to Clipboard</button>
                         </CopyToClipboard>
